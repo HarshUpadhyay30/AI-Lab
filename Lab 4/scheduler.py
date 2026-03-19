@@ -1,34 +1,3 @@
-"""
-Scheduler module for Assignment 4
-
-This module defines data structures and algorithms to solve the assignment
-scheduling problem described in the provided assignment. It includes
-greedy scheduling heuristics and an A* search implementation to find
-an optimal schedule that minimizes the total food cost subject to
-dependency and group-size constraints.
-
-Usage:
-
-    python scheduler.py input_file [strategy]
-
-Where `strategy` can be one of:
-    - greedy_cost: Greedy by food cost
-    - greedy_depth: Greedy by dependency depth
-    - greedy_freq: Greedy by food type frequency
-    - greedy_topo: Greedy by earliest deadline (topological order)
-    - astar: A* search to find the optimal schedule
-
-When run as a script, the program reads the given input file, applies
-the selected strategy (default is all greedy strategies and A*), and
-prints the resulting schedules and statistics to stdout.
-
-The module is structured such that its classes can be imported and
-reused in other contexts (e.g., for testing or integration into
-larger projects).
-
-Author: ChatGPT Assistant
-Date: 2026-03-19
-"""
 
 from __future__ import annotations
 
